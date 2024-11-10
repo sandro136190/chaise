@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section class="scene">
+      <div class="sun"></div>
+      <div class="bg">
+        <img src="/police_car.gif" class="car1" />
+        <img src="/sprite6_0.png" class="car2" />
+      </div>
+    </section>
+    <script>
+      const sun = document.querySelector(".sun");
+      const body = document.querySelector("body");
+      sun.onclick = function () {
+        body.classList.toggle("dark");
+      };
+    </script>
+  </body>
+</html>
